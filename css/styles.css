@@ -16,3 +16,87 @@ body{
 	width: 85%;
 	margin: 0px auto;
 }
+
+/*Cabecera*/
+#main-header{
+	background: white;
+	height: 100px;
+	line-height: 85px;
+}
+#logo{
+	width: 63%;
+	float: left;
+}
+#logo h1{
+	font-weight: bold;
+	font-size: 25px;
+	color: #Fb314E;
+}
+#menu{
+	width: 400px;
+	float: left;
+}
+#menu ul li{
+	list-style: none;
+	float: left;
+	margin-left: 19px;
+	margin-right: 19px;
+}
+#menu ul li a{
+	color: black;
+}
+#menu ul li a:hover{
+	color: #FB314E;
+}
+
+/* Slider */
+#slider{
+	height: 300px;
+	background: #FB314E;
+}
+#slider h2{
+	font-size: 40px;
+	text-align: center;
+	color: white;
+	line-height: 290px;
+	text-shadow: 0px 0px 6px black;
+}
+
+/* Servicios */
+.subheader{
+	font-size: 34px;
+	color: #333;
+	text-align: center;
+	margin-top: 40px;
+	margin-bottom: 30px;
+	padding-bottom: 15px;
+	border-bottom: rgba(251, 49, 78, .4);
+}
+
+.service, .video{
+	width: 33%;
+	text-align: center;
+	float: left;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+.service img{
+	height: 48px;
+	margin-bottom: 20px;
+}
+.service h3{
+	margin-bottom: 10px;
+}
+.service p, .video p{
+	color: #444;
+	text-align: center;
+	display: block;
+	width: 85%;
+	margin: 0 auto;
+}
+
+/* Videos */
+.video iframe{
+	width: 80%;
+	height: 170px;
+}

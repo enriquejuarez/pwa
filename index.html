@@ -5,7 +5,25 @@
 	<title>Curso PWA</title>
 	<link rel="shortcut icon" type="image/png" href="img/favicon.png">
 	<link rel="stylesheet"  href="css/styles.css">
+	<!-- Color de la aplicación -->
+	<meta name="theme-color" content="#Fb314E">
+
+	<!-- Optimizacion para movil -->
+	<meta name="MobileOptimized" content="width">
+	<meta name="HandheldFriendly" content="true">
+
+	<!-- Meta etiquetas PWA para dispositivos de apple -->
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+	<link rel="apple-touch-icon" href="img/favicon.png">
+	<link rel="apple-touch-startup-image"  href="img/favicon.png">
+
+	<!-- Configuración general PWA -->
+	<link rel="manifest" href="manifest.json">
+
 	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script type="text/javascript" src="js/main.js"></script>
 </head>
 <body>
 	<header id="main-header">
@@ -15,10 +33,10 @@
 			</div>
 			<div id="menu">
 				<ul>
-					<li><a href="#">Inicio</a></li>
-					<li><a href="#">Servicios</a></li>
-					<li><a href="#">Videos</a></li>
-					<li><a href="#">Contacto</a></li>
+					<li><a href="#main-header">Inicio</a></li>
+					<li><a href="#servicios">Servicios</a></li>
+					<li><a href="#videos">Videos</a></li>
+					<li><a href="#footer">Contacto</a></li>
 				</ul>
 			</div>
 		</div>
@@ -68,7 +86,7 @@
 		</div>
 	</div>
 	<div class="clearfix"></div>
-	<footer>
+	<footer id="footer">
 		<div class="container">
 			<h2 class="subheader">Contacto</h2>
 			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod

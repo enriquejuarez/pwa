@@ -5,6 +5,9 @@ padding: 0;
 text-decoration: none;
 font-family: 'Open Sans', Verdana;
 }
+body, html{
+	overflow-x: hidden; 
+}
 body{
 background-color: white;
 }
@@ -33,7 +36,7 @@ font-size: 25px;
 color: #Fb314E;
 }
 #menu{
-width: 400px;
+width: 399px;
 float: left;
 }
 #menu ul li{
@@ -135,6 +138,29 @@ height: 170px;
 		margin: 0px auto;
 	}
 }
+
+@media (max-width: 780px){
+	.service, .video{
+		width: 70%;
+		float: none;
+		margin: 0px auto;
+		margin-top: 20px;
+		margin-bottom: 40px;
+	}
+
+	.service img{
+		margin-bottom: 10px;
+	}
+
+	.service p, .video p{
+		margin-top: 10px;
+	}
+	.video iframe{
+		width: 80%;
+		height: 230px;
+	}
+}
+
 @media (max-width: 700px){
 	#slider{
 		overflow: hidden;
@@ -154,6 +180,16 @@ height: 170px;
 	#menu ul li{
 		margin-left: 4%;
 		margin-right: 4%;
+	}
+	#slider h2{
+		margin-top: 40px;
+	}
+	.service, .video{
+		width: 90%;
+	}
+	.video iframe{
+		width: 80%;
+		height: 150px;
 	}
 }
 

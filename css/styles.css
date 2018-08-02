@@ -1,102 +1,167 @@
 /*Estilos generales*/
 *{
-	margin: 0;
-	padding: 0;
-	text-decoration: none;
-	font-family: 'Open Sans', Verdana;
+margin: 0;
+padding: 0;
+text-decoration: none;
+font-family: 'Open Sans', Verdana;
 }
 body{
-	background-color: white;
+background-color: white;
 }
 .clearfix{
-	clear: both;
-	float: none;
+clear: both;
+float: none;
 }
 .container{
-	width: 85%;
-	margin: 0px auto;
+width: 85%;
+margin: 0px auto;
 }
 
 /*Cabecera*/
 #main-header{
-	background: white;
-	height: 100px;
-	line-height: 85px;
+background: white;
+height: 100px;
+line-height: 85px;
 }
 #logo{
-	width: 63%;
-	float: left;
+width: 63%;
+float: left;
 }
 #logo h1{
-	font-weight: bold;
-	font-size: 25px;
-	color: #Fb314E;
+font-weight: bold;
+font-size: 25px;
+color: #Fb314E;
 }
 #menu{
-	width: 400px;
-	float: left;
+width: 400px;
+float: left;
 }
 #menu ul li{
-	list-style: none;
-	float: left;
-	margin-left: 19px;
-	margin-right: 19px;
+list-style: none;
+float: left;
+margin-left: 19px;
+margin-right: 19px;
 }
 #menu ul li a{
-	color: black;
+color: black;
 }
 #menu ul li a:hover{
-	color: #FB314E;
+color: #FB314E;
 }
 
 /* Slider */
 #slider{
-	height: 300px;
-	background: #FB314E;
+height: 300px;
+background: #FB314E;
 }
 #slider h2{
-	font-size: 40px;
-	text-align: center;
-	color: white;
-	line-height: 290px;
-	text-shadow: 0px 0px 6px black;
+font-size: 40px;
+text-align: center;
+color: white;
+line-height: 290px;
+text-shadow: 0px 0px 6px black;
 }
 
 /* Servicios */
 .subheader{
-	font-size: 34px;
-	color: #333;
-	text-align: center;
-	margin-top: 40px;
-	margin-bottom: 30px;
-	padding-bottom: 15px;
-	border-bottom: rgba(251, 49, 78, .4);
+font-size: 34px;
+color: #333;
+text-align: center;
+margin-top: 40px;
+margin-bottom: 30px;
+padding-bottom: 15px;
+border-bottom: rgba(251, 49, 78, .4);
 }
 
 .service, .video{
-	width: 33%;
-	text-align: center;
-	float: left;
-	margin-top: 20px;
-	margin-bottom: 20px;
+width: 33%;
+text-align: center;
+float: left;
+margin-top: 20px;
+margin-bottom: 20px;
 }
 .service img{
-	height: 48px;
-	margin-bottom: 20px;
+height: 48px;
+margin-bottom: 20px;
 }
 .service h3{
-	margin-bottom: 10px;
+margin-bottom: 10px;
 }
 .service p, .video p{
-	color: #444;
-	text-align: center;
-	display: block;
-	width: 85%;
-	margin: 0 auto;
+color: #444;
+text-align: center;
+display: block;
+width: 85%;
+margin: 0 auto;
 }
 
 /* Videos */
 .video iframe{
-	width: 80%;
-	height: 170px;
+width: 80%;
+height: 170px;
+}
+
+/* Media Query */
+@media (max-width: 1275px){
+	.container{
+		width: 95%;
+	}
+}
+
+@media (max-width: 1145px){
+	#main-header{
+		height: 70px;
+		line-height: 65px;
+	}
+	#logo{
+	width: 60%;
+	/*float: none;
+	margin: 0px auto;*/
+}
+/*#menu{
+	float: none;
+	margin: 0px auto;
+}*/
+}
+
+@media (max-width: 1055px){
+	#logo{
+		width: 277px;
+		float: none;
+		margin: 0px auto;
+	}
+	#menu{
+		float: none;
+		margin: 0px auto;
+	}
+}
+@media (max-width: 700px){
+	#slider{
+		overflow: hidden;
+		height: 150 px;
+	}
+	#slider h2{
+		font-size: 30px;
+		line-height: 30px;
+		margin-top: 130px;
+	}
+}
+@media (max-width: 411px){
+	#menu{
+		width: 100%;
+		text-align: center;
+	}
+	#menu ul li{
+		margin-left: 4%;
+		margin-right: 4%;
+	}
+}
+
+@media (max-width: 371px){
+	#main-header{
+		height: auto;
+	}
+	#menu ul li{
+		float: none;
+	}
 }

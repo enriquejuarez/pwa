@@ -1,30 +1,30 @@
-/*Asignar nombre y version de la cabche*/
+/*Asignar nombre y version de la cache*/
 const CACHE_NAME = 'v1_cache_carlos_enrique_pwa';
 
 /*Fecheros a cachear en la aplicación*/
 var urlsToCache = [
 	'./',
-	'./css/styles.css'
-	// './img/favicon.png',
-	// './img/1.png',
-	// './img/2.png',
-	// './img/3.png',
-	// './img/4.png',
-	// './img/5.png',
-	// './img/6.png',
-	// './img/facebook.png',
-	// './img/instagram.png',
-	// './img/twitter.png',
-	// './img/favicon-1024.png',
-	// './img/favicon-512.png',
-	// './img/favicon-384.png',
-	// './img/favicon-256.png',
-	// './img/favicon-192.png',
-	// './img/favicon-128.png',
-	// './img/favicon-96.png',
-	// './img/favicon-64.png',
-	// './img/favicon-32.png',
-	// './img/favicon-16.png'
+	'./css/styles.css',
+	'./img/favicon.png',
+	'./img/1.png',
+	'./img/2.png',
+	'./img/3.png',
+	'./img/4.png',
+	'./img/5.png',
+	'./img/6.png',
+	'./img/facebook.png',
+	'./img/instagram.png',
+	'./img/twitter.png',
+	'./img/favicon-1024.png',
+	'./img/favicon-512.png',
+	'./img/favicon-384.png',
+	'./img/favicon-256.png',
+	'./img/favicon-192.png',
+	'./img/favicon-128.png',
+	'./img/favicon-96.png',
+	'./img/favicon-64.png',
+	'./img/favicon-32.png',
+	'./img/favicon-16.png'
 ];
 
 // Evento install
@@ -70,7 +70,7 @@ self.addEventListener('activate', e => {
 // Evento fetch
 self.addEventListener('fetch', e => {
 	e.responWith(
-		caches.math(e.request)
+		caches.match(e.request)
 		      .then(res => {
 		      	if(res){
 		      		//Devuelve datos desde cache
